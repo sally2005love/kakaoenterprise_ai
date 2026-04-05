@@ -1,3 +1,4 @@
 "hello world!"
 i am practicing~!
 it is hard.. but i am working on it!
+now i am studying branch and git flow!
