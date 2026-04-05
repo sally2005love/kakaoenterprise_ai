@@ -1,4 +1,4 @@
-"hello world!"
+"hello world!" + wrote this from feature-1
 i am practicing~!
 it is hard.. but i am working on it!
 now i am studying branch and git flow!
