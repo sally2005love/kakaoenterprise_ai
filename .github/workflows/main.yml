@@ -1,0 +1,19 @@
+name: My First GitHub Action
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Python Script
+        run: |
+          echo "파이썬 코드를 자동으로 실행합니다:"
+          python3 fibo.py
+
+      - name: Build Docker Image
+        run: |
+          echo "도커 이미지를 빌드합니다:"
+          docker build -t my-python-app .
