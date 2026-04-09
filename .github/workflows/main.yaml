@@ -1,0 +1,19 @@
+name: My First GitHub Action
+# 1. 언제 실행할지 결정 (코드를 push 하거나 pull request를 보낼 때)
+on: [push, pull_request]
+
+jobs:
+  # 2. 수행할 작업 이름
+  build:
+    # 3. 어떤 OS 환경에서 돌릴지 (보통 우분투 리눅스를 씁니다)
+    runs-on: ubuntu-latest
+
+    steps:
+    # 4. 실제로 실행할 단계들
+    - name: Say Hello
+      run: echo "Hello, GitHub Actions! 배포 자동화 공부 중입니다."
+
+    - name: Check System Version
+      run: |
+        node -v
+        python3 --version
